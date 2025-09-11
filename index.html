@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player:Music for Everyone</title>
+    <link rel="ico" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utililty.css">
+</head>
+
+<body>
+
+
+    <div class="container flex">
+        <div class="left border bg-black rounded m-1">
+            <div class="home ">
+                <img src="hamburger.svg"class="hambrgr" alt="">
+                <ul>
+                    <li><img calss="inverter" src="logo.svg" style="filter: brightness(0) invert(1)" alt="logo">spotify</li>
+                    <li><img calss="inverter" src="home.svg" style="filter: brightness(0) invert(1)"alt="home">Home</li>
+                    <li><img calss="inverter" src="search.svg" style="filter: brightness(0) invert(1)"alt="search">search</li>
+                </ul>
+            </div>
+            <div class="library bg-black rounded m-1">
+                <h2>
+                    <ul>
+                        <img calss="inverter" src="lib.svg">Your libray
+                    </ul>
+                </h2>
+                <div class="create-list">
+                    <div class="lib-div">
+                      <h3>create your play list</h3>
+                      its easy we will help you
+                      <button class="playlist" id="toggleBtn">create playlist</button>
+                    </div>
+                  
+                        <div class="prodacast">
+                        <h3>Let's find to some prodacast to follow</h3>
+                        <p>we will keep you updated for new episodes</p>
+
+
+                        <button class="playlist">Browse prodacast</button>
+                    </div>
+                </div>
+                    <div id="listContainer">
+                        <div class="music inverter">🎵 Acoustic    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""> </p></div>
+                        <div class="music inverter">🎵 SoundHelix Song 2    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Indian Pop    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Bollywood Background   <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Acoustic    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Sunny - Bensound    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Acoustic     <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵  Acoustic    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                        <div class="music inverter">🎵 Acoustic    <p class="playsmall">play music <img src="play.svg" id="play" height="16px" alt=""></p> </div>
+                 </p>       
+                        
+                      
+                      
+                </div>
+                <div class="footer">
+
+
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="right border  ">
+            <div class="top   ">
+                <div class="arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+
+                <div class="install"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"
+                        fill="white" aria-hidden="true">
+                        <path
+                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z">
+                        </path>
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z">
+                        </path>
+                    </svg> Install App </div>
+
+                <div class="eng"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#ffffff" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <ellipse cx="12" cy="12" rx="4" ry="10" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M2 12H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg> English</div>
+                <a href="#" class=" sign">Sign up</a>
+                <button class="log">Log in</button>
+            </div>
+
+            <div class="spotify-playlist border">
+                <h2>Trending songs</h2>
+                <div class="containerdiv">
+                    <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://c.saavncdn.com/editorial/PunjabiHitSongs_20250402103316.jpg?bch=1743591831"
+                                alt="Punjabi Hit Songs" width="180" height="180">
+
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div>
+                    <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33" alt="">
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div>
+                    <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://c.saavncdn.com/editorial/PunjabiHitSongs_20250402103316.jpg?bch=1743591831"
+                                alt="Punjabi Hit Songs" width="180" height="180">
+
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div>
+                    <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33" alt="">
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div> <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://c.saavncdn.com/editorial/PunjabiHitSongs_20250402103316.jpg?bch=1743591831"
+                                alt="Punjabi Hit Songs" width="180" height="180">
+
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div>
+                    <div class="cards-container">
+                        <h3>happy hits!</h3>
+                        <div class="card">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33" alt="">
+                            <p>hits to boost your moods fill your happyness</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="playbar">
+                    <div class="sngInfo">
+
+                    </div>
+                    <div class="songbtns">
+                       
+<img src="previous.svg" onclick="prevSong()" id="prev" alt="Previous Song">
+
+
+<img 
+  src="play.svg" 
+  id="play" 
+  onclick="playSong()" 
+  alt="Play Song" 
+ 
+  style="cursor: pointer;" 
+/>
+<img src="next.svg" onclick="nextSong()" id="next" alt="Next Song">
+
+
+                    </div>
+                        <div class="progress-bar">
+                        <div class="line"></div>
+                        <div class="circle" id="progressCircle"></div>
+                      
+
+                    </div>
+                    
+                      
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

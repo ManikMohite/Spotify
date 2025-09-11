@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+body{
+ 
+  color: white;
+  background-color: #0b0a0a;
+  gap: 5px;
+  
+  
+}
+
+
+.left{
+    width: 28vw;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   height: 100vh;
+    position: fixed;
+    overflow: auto;
+    
+}
+.right{
+    width: 70vw;
+    height: 90vh;
+    background-color:#0e0d0d;
+    margin-left: 29vw;
+    border-radius: 5px;
+}
+.home ul li {
+    display: flex;
+    width: 15px;
+    list-style: none;
+     padding: 10px;;
+   margin-left: 0px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.footer a{
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 20px;
+   
+
+
+}
+
+.lib-div{
+    height:55vh;
+    color: white;
+    background-color:#292727;
+    gap: 5px;
+   padding-left: 20px;
+   width: 23vw;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap; 
+   
+  
+}
+.prodacast{
+    height:45vh;
+    color: white;
+    background-color:#292727;
+    gap: 5px;
+   padding-left: 20px;
+   width: 23vw;
+   margin-top: 20px;
+}
+
+.create-list{
+    
+   background-color: black;
+   height: 35vh;
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+   scrollbar-width: none;
+  margin-bottom: 20px;
+}
+.top{
+    height:40px;
+    width: 67vw;
+    background-color: #000000e9   ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px ;
+    margin-left:1vw;
+    
+}
+.library{
+    border-radius: 5px;
+    background-color: #292727;
+    height: 55vh;
+    
+}.eng{
+    width:12%;
+    height: 27px;
+    color: gainsboro;
+    border: 2px solid gray;
+    border-radius: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+.playlist  {
+    margin-top:  10px;
+    padding: 8px;
+    border-radius: 12px;
+
+}
+.sign,.install{
+    color: gainsboro;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+    
+}
+.log
+{
+    width: 7vw;
+    height:7vh; 
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFF;
+    color:rgb(40, 33, 33);
+    font-weight: bolder;
+
+}
+
+
+
+/* Main Container */
+.spotify-playlist {
+    padding: 20px;
+    margin-top: 5px;;
+    background-color:#161616;
+    color: white;
+}
+
+/* Flexbox container for cards */
+.containerdiv {
+    display: flex;
+    flex-wrap: wrap;  /* Allows wrapping */
+    justify-content: center; /* Center alignment */
+    gap: 20px; /* Space between cards */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+ 
+.image-wrapper {
+     /* Just to see if the div is rendering */
+    padding: 20px;
+}
+
+
+.sign:hover{
+  color: #3c3535;
+  font-size: 1rem;
+}
+.install:hover{
+    font-size: 1rem;
+    color: #605d5d; 
+    padding: 1px;
+}
+.log:hover{
+    color: rgb(180, 175, 175);
+    font-size: small;
+    padding:12px;
+}
+.eng:hover{
+    color: #625c5c;
+    padding: 2px;
+    
+}
+.playbar{
+
+    width: 70vw;
+    height: 8vh;
+    background-color: #302c25;
+   
+    justify-content: center;
+   
+    border-radius: 5px;
+    
+    
+
+}
+.songbtns{
+   height: 6vh;
+   width: 15vw;
+    cursor: pointer;
+   display: flex;
+   margin-left: 40%;
+   
+   
+
+}
+.libel{
+    width: 150px;
+    height: 100px;
+}  
+.listctnr{
+    border: 2px solid black;
+    height: 50vh;
+    width: 60vw;
+}
+#listContainer{
+
+    width: 27vw;
+    height: 40vh;
+    background-color: #272626;
+    overflow-y: auto;
+    scrollbar-width: none;
+    
+    
+}
+ .progress-bar {
+    position: relative;
+    position: absolute;
+    width: 100vw;
+    max-width: 750px;
+    height: 4px;
+    margin: 10px,auto;
+    background-color: #7d7373;
+    border-radius: 5px;
+    
+    margin-top:1%;
+  } 
+  
+ .line {
+    position: absolute;
+   top: 0;
+   left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #444;
+    transform: translateY(-50%);
+  } 
+  
+  .circle {
+   top: -4px;
+    width: 12px;
+    height: 12px;
+    background-color: #dcd7d5;
+    border-radius: 50%;
+    position: absolute;
+    transition: left 0.1s linear;
+    transform: translateX(-50%);   
+  }
+  
+
+

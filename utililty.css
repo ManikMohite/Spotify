@@ -1,0 +1,70 @@
+.border{
+    border:none;
+    border-radius: 20px;
+}
+.flex{
+    display:flex;
+
+}
+.align-center{
+    align-items:center;
+}
+.justify-center{
+    justify-content: center;
+}
+.bg-black{
+    background-color: rgb(10, 2, 2);
+    color: white;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 18vw;
+    height: auto;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%; /* Ensure image scales correctly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}.hidden{
+    display: none;
+}
+.music {
+    width: 20vw;
+    height: 10vh;
+    border: 1px white solid;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #161515;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: small;
+    
+}
+.playsmall{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* @media(max-width:1400px){
+    .left{
+          background-color: red;
+          position: relative;
+          left: -100%;
+          transition: .3s;
+          z-index: 1;
+          width: 233px;
+    } */

@@ -1,0 +1,34 @@
+
+
+  <script>
+    const songs = [
+      {
+        title: "Acoustic Breeze – Bensound",
+        url: "https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3"
+      },
+      {
+        title: "Creative Minds – Bensound",
+        url: "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"
+      },
+      {
+        title: "Better Days – Bensound",
+        url: "https://www.bensound.com/bensound-music/bensound-betterdays.mp3"
+      }
+    ];
+
+    const playlistEl = document.getElementById("playlist");
+    const audioEl = document.getElementById("audio");
+
+    songs.forEach((song, index) => {
+      const songEl = document.createElement("div");
+      songEl.className = "song";
+      songEl.innerText = song.title;
+      songEl.onclick = () => {
+        audioEl.src = song.url;
+        audioEl.play();
+      };
+      playlistEl.appendChild(songEl);
+    });
+  </script>
+</body>
+</html>
