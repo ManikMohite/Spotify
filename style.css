@@ -6,13 +6,14 @@ body{
   color: white;
   background-color: #0b0a0a;
   gap: 5px;
+  padding: 20px;
   
   
 }
 
 
 .left{
-    width: 28vw;
+    width: 20vw;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    height: 100vh;
@@ -99,8 +100,8 @@ body{
     height: 55vh;
     
 }.eng{
-    width:12%;
-    height: 27px;
+    width:11%;
+    height: 34px;
     color: gainsboro;
     border: 2px solid gray;
     border-radius: 8px;
@@ -116,25 +117,36 @@ body{
     border-radius: 12px;
 
 }
-.sign,.install{
-    color: gainsboro;
-   text-decoration: none;
-   display: flex;
-   align-items: center;
-   gap: 4px;
+.sign, .install {
+     padding: 8px 22px;
+    border-radius: 24px;
     
+    color: #000;
+    font-weight: 700;
+   background-color: whitesmoke;
+    cursor: pointer;
+    transition: 0.25s ease;
 }
-.log
-{
-    width: 7vw;
-    height:7vh; 
-    border: none;
-    border-radius: 20px;
-    background-color: #FFFF;
-    color:rgb(40, 33, 33);
-    font-weight: bolder;
 
+.sign:hover, .install:hover {
+   
+    transform: scale(1.05);
+    color: #fff;
 }
+
+/* Login button (Spotify style) */
+.log {
+    padding: 8px 22px;
+    border-radius: 24px;
+    border: white solid;
+    color: #000;
+    font-weight: 700;
+   
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+
 
 
 
@@ -163,48 +175,24 @@ body{
 }
 
 
-.sign:hover{
-  color: #3c3535;
-  font-size: 1rem;
-}
+
 .install:hover{
-    font-size: 1rem;
+   
     color: #605d5d; 
-    padding: 1px;
+   
 }
 .log:hover{
     color: rgb(180, 175, 175);
     font-size: small;
-    padding:12px;
+   
 }
 .eng:hover{
     color: #625c5c;
     padding: 2px;
     
 }
-.playbar{
 
-    width: 70vw;
-    height: 8vh;
-    background-color: #302c25;
-   
-    justify-content: center;
-   
-    border-radius: 5px;
-    
-    
 
-}
-.songbtns{
-   height: 6vh;
-   width: 15vw;
-    cursor: pointer;
-   display: flex;
-   margin-left: 40%;
-   
-   
-
-}
 .libel{
     width: 150px;
     height: 100px;
@@ -224,39 +212,95 @@ body{
     
     
 }
- .progress-bar {
-    position: relative;
-    position: absolute;
-    width: 100vw;
-    max-width: 750px;
-    height: 4px;
-    margin: 10px,auto;
-    background-color: #7d7373;
-    border-radius: 5px;
-    
-    margin-top:1%;
-  } 
-  
- .line {
-    position: absolute;
-   top: 0;
-   left: 0;
-    height: 2px;
+
+  /* Playbar container */
+.playbar {
     width: 100%;
-    background-color: #444;
-    transform: translateY(-50%);
-  } 
-  
-  .circle {
-   top: -4px;
+    background: #181818;
+    border-top: 1px solid #282828;
+    position: fixed;
+    bottom: 60px;   /* keeps it above footer */
+    left: 0;
+    padding: 12px 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;     /* <— Stack vertically */
+    align-items: center;        /* <— Center everything */
+    justify-content: center;
+}
+
+/* Center control buttons */
+.songbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+/* Icon buttons hover feel */
+.songbtns img,
+#playIcon {
+    width: 34px;
+    height: 34px;
+   
+    transition: transform 0.25s, filter 0.25s;
+}
+
+.songbtns img:hover,
+#playIcon:hover {
+    transform: scale(1.25);
+    filter: brightness(1.4);
+}
+
+/* Progress bar placed BELOW buttons now */
+.progress-bar {
+    width: 60%;
+    height: 5px;
+    background: #444;
+    border-radius: 20px;
+    margin-top: 10px;   /* distance below buttons */
+    position: relative;
+    cursor: pointer;
+}
+
+/* Filled progress */
+.line {
+    height: 100%;
+    width: 0%;
+    background: #1db954;
+    border-radius: 20px;
+}
+
+/* Draggable circle knob */
+.circle {
     width: 12px;
     height: 12px;
-    background-color: #dcd7d5;
-    border-radius: 50%;
     position: absolute;
-    transition: left 0.1s linear;
-    transform: translateX(-50%);   
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #fff;
+    transition: transform .2s;
+}
+
+.circle:hover {
+    transform: translate(-50%, -50%) scale(1.45);
+    background: #1db954;
+    box-shadow: 0 0 10px rgba(29,185,84,0.8);
+}
+
+
+  footer{
+    background-color: rgb(12, 10, 10);
+    bottom: 0;
+    position: fixed;
+    width: 98%;height: 7%;
+    color: rgb(141, 140, 140);
+
   }
-  
+  .container {
+    margin-bottom: 5%;
+  }
 
 
